@@ -17,7 +17,7 @@ public class TopListSong {
     public int getPosition() {
         return position;
     }
-    public String getSong() {
+    public String getTitle() {
         return song;
     }
     public String getArtist() {

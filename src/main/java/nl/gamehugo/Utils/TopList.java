@@ -60,4 +60,13 @@ public class TopList {
         }
         return topList;
     }
+
+    public int getPositionFromSong(Song song) {
+        for(Map.Entry<Integer, TopListSong> entry : topList.entrySet()) {
+            if(entry.getValue().getTitle().equalsIgnoreCase(song.getTitle()) && entry.getValue().getArtist().equalsIgnoreCase(song.getArtist())) {
+                return entry.getKey();
+            }
+        }
+        return -1;
+    }
 }
